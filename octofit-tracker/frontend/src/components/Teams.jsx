@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { apiFetch, extractDataFromResponse } from '../utils/api';
 
+// Codespaces example endpoint: https://<codespace>-8000.app.github.dev/api/teams
+
 export default function Teams() {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);

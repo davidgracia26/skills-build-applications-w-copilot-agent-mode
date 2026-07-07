@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { apiFetch, extractDataFromResponse } from '../utils/api';
 
+// Codespaces example endpoint: https://<codespace>-8000.app.github.dev/api/users
+
 export default function Users() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
